@@ -18,7 +18,7 @@ async function getByName(resource_name) {
 
 async function create(resource) {
     const id = await db('resources')
-        .insert(resource)
+        .insert(resource);
 
     return getById(id);
 }
